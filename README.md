@@ -1,6 +1,8 @@
-# ProcurePilot AI — AI Procurement Copilot
+# ProcurePilot AI
 
-A portfolio MVP for procurement exception management. It demonstrates product thinking, a working web app, deterministic business rules, evidence-backed question answering, API design, testing and delivery automation.
+**Catch invoice problems before they get paid.**
+
+ProcurePilot checks each supplier invoice against its purchase order and contract. If the PO reference, supplier, currency or total doesn't match, it sends the invoice to an exception queue where someone can review it, and every status change is logged. An AI assistant answers questions about invoices, suppliers and contracts and points to the records it used. It runs locally with one Docker command, on synthetic data.
 
 > This is an independent portfolio project inspired by common Source-to-Pay workflows. It is not an official Zycus product. All data is synthetic. Do not use it for real payment decisions or confidential data.
 
@@ -16,7 +18,7 @@ A portfolio MVP for procurement exception management. It demonstrates product th
 ## Run from scratch
 Prerequisites: Git and Docker Desktop. No LLM API key is required for the core app.
 
-1. Extract the ZIP and open the `ProcurePilot-AI` folder in VS Code.
+1. Clone this repository and open the folder in VS Code.
 2. Copy `.env.example` to `.env` (PowerShell: `Copy-Item .env.example .env`). The local default password is for demo only.
 3. In the project root, run:
    ```bash
